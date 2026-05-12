@@ -12,7 +12,7 @@ export const TOOLS: Tool[] = [
     path: "/qr-generator",
     seoTitle: "QR Code Generator - Create Free QR Codes Online | WebToolz",
     seoDescription:
-      "Generate QR codes for URLs, text, and contacts instantly. Free, no signup.",
+      "Generate QR codes for URLs, text, and contacts instantly. Free, no signup, unlimited use. Download high-quality PNG images.",
   },
   {
     id: "whatsapp-link",
@@ -25,7 +25,7 @@ export const TOOLS: Tool[] = [
     path: "/whatsapp-link",
     seoTitle: "WhatsApp Link Generator - Create Click to Chat Links | WebToolz",
     seoDescription:
-      "Create WhatsApp click-to-chat links easily. Pre-fill messages and start conversations without saving the contact number.",
+      "Create WhatsApp chat links without saving phone numbers. Perfect for business, support, and marketing. Click to chat instantly.",
   },
   {
     id: "age-calculator",
@@ -39,7 +39,7 @@ export const TOOLS: Tool[] = [
     seoTitle:
       "Age Calculator - Calculate Exact Age in Years, Months, Days | WebToolz",
     seoDescription:
-      "Calculate your exact age using your date of birth. Find out your age in years, months, days instantly for free.",
+      "Calculate exact age in years, months, and days from date of birth. Birthday countdown included.",
   },
   {
     id: "gst-calculator",
@@ -52,7 +52,7 @@ export const TOOLS: Tool[] = [
     path: "/gst-calculator",
     seoTitle: "GST Calculator - Find Net and Gross Amounts Online | WebToolz",
     seoDescription:
-      "Easy GST calculator to add or remove GST from any amount. Select standard tax rates and calculate net prices instantly.",
+      "Calculate GST (Goods and Services Tax) online easily. Add or remove standard tax rates to find net and gross prices instantly.",
   },
   {
     id: "password-generator",
@@ -65,7 +65,7 @@ export const TOOLS: Tool[] = [
     path: "/password-generator",
     seoTitle: "Password Generator - Create Strong Secure Passwords | WebToolz",
     seoDescription:
-      "Create strong, secure random passwords instantly. Customize length, numbers, and special characters to protect your accounts.",
+      "Generate strong, secure, and unbreakable random passwords instantly. Customize length, numbers, and special characters online for free.",
   },
   {
     id: "word-counter",
@@ -78,7 +78,7 @@ export const TOOLS: Tool[] = [
     path: "/word-counter",
     seoTitle: "Word Counter - Online Character & Word Count Tool | WebToolz",
     seoDescription:
-      "Count the number of words, characters, and estimate reading time for any text format quickly for free.",
+      "Free online word counter and character counter. Count the number of words, characters, and get estimated reading time for your essays or articles.",
   },
   {
     id: "bmi-calculator",
@@ -91,7 +91,7 @@ export const TOOLS: Tool[] = [
     path: "/bmi-calculator",
     seoTitle: "BMI Calculator - Check Body Mass Index Online | WebToolz",
     seoDescription:
-      "Calculate Body Mass Index online with accurate height and weight tracking. Find your health category quickly and for free.",
+      "Check your Body Mass Index (BMI) online. Input height and weight to accurately find your health category and ideal weight range.",
   },
   {
     id: "percentage-calculator",
@@ -104,7 +104,7 @@ export const TOOLS: Tool[] = [
     path: "/percentage-calculator",
     seoTitle: "Percentage Calculator - Calculate Percent Changes | WebToolz",
     seoDescription:
-      "Free online percentage calculator. Find percentages of numbers, percentage increases, and percentage differences easily.",
+      "Free percentage calculator. Easily calculate percentage of a number, percentage increases, decreases, and percent differences online.",
   },
   {
     id: "emi-calculator",
@@ -117,7 +117,7 @@ export const TOOLS: Tool[] = [
     path: "/emi-calculator",
     seoTitle: "EMI Calculator - Calculate Monthly Finance EMIs | WebToolz",
     seoDescription:
-      "Calculate loan EMI payments online. Plan financial goals with loan amount, interest rate, and tenure monthly breakdowns.",
+      "Calculate loan EMI payments online. Plan financial goals by breaking down loan amounts, interest rates, and loan tenure into monthly payments.",
   },
   {
     id: "text-case",
@@ -130,7 +130,7 @@ export const TOOLS: Tool[] = [
     path: "/text-case-converter",
     seoTitle: "Text Case Converter - Change Text to Upper, Lower | WebToolz",
     seoDescription:
-      "Convert text blocks to UPPERCASE, lowercase, Title Case, and more formats instantly. Useful free text formatting utility.",
+      "Free online text case converter tool. Change your text block formatting to UPPERCASE, lowercase, Title Case, and Sentence case instantly.",
   },
   {
     id: "character-counter",
@@ -143,7 +143,7 @@ export const TOOLS: Tool[] = [
     path: "/character-counter",
     seoTitle: "Character Counter - Track Text Length Limits | WebToolz",
     seoDescription:
-      "Monitor character lengths for social media posts, essays, and text entries perfectly with instant live counting.",
+      "Track your text character counts accurately with spaces. Monitor text length limits for X (Twitter), Instagram, essays, and SMS messages.",
   },
   {
     id: "random-number",
@@ -156,6 +156,6 @@ export const TOOLS: Tool[] = [
     path: "/random-number-generator",
     seoTitle: "Random Number Generator - Pick Numbers Randomly | WebToolz",
     seoDescription:
-      "Generate random numbers exactly between your customized minimum and maximum scopes automatically and instantly.",
+      "Pick a random number easily between any minimum and maximum constraints. Great for giveaways, games, probability, and dice rolls.",
   },
 ];
