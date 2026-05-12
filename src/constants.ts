@@ -9,6 +9,7 @@ export const TOOLS: Tool[] = [
     icon: 'QrCode',
     category: 'generator',
     path: '/qr-generator',
+    seoTitle: 'QR Code Generator - Instant QR Code',
   },
   {
     id: 'whatsapp-link',
@@ -18,6 +19,7 @@ export const TOOLS: Tool[] = [
     icon: 'MessageSquare',
     category: 'generator',
     path: '/whatsapp-link',
+    seoTitle: 'WhatsApp Link Generator - No Save Number',
   },
   {
     id: 'age-calculator',
@@ -27,6 +29,7 @@ export const TOOLS: Tool[] = [
     icon: 'Calendar',
     category: 'calculator',
     path: '/age-calculator',
+    seoTitle: 'Age Calculator - Exact Age from DOB',
   },
   {
     id: 'gst-calculator',
@@ -36,6 +39,7 @@ export const TOOLS: Tool[] = [
     icon: 'Percent',
     category: 'calculator',
     path: '/gst-calculator',
+    seoTitle: 'GST Calculator India - Calculate GST',
   },
   {
     id: 'password-generator',
@@ -45,6 +49,7 @@ export const TOOLS: Tool[] = [
     icon: 'Lock',
     category: 'generator',
     path: '/password-generator',
+    seoTitle: 'Strong Password Generator',
   },
   {
     id: 'word-counter',
@@ -54,6 +59,7 @@ export const TOOLS: Tool[] = [
     icon: 'FileText',
     category: 'text',
     path: '/word-counter',
+    seoTitle: 'Word Counter - Count Words Characters',
   },
   {
     id: 'bmi-calculator',
@@ -63,6 +69,7 @@ export const TOOLS: Tool[] = [
     icon: 'Activity',
     category: 'calculator',
     path: '/bmi-calculator',
+    seoTitle: 'BMI Calculator India',
   },
   {
     id: 'percentage-calculator',
@@ -72,6 +79,7 @@ export const TOOLS: Tool[] = [
     icon: 'Calculator',
     category: 'calculator',
     path: '/percentage-calculator',
+    seoTitle: 'Percentage Calculator Online',
   },
   {
     id: 'emi-calculator',
@@ -81,6 +89,7 @@ export const TOOLS: Tool[] = [
     icon: 'CreditCard',
     category: 'calculator',
     path: '/emi-calculator',
+    seoTitle: 'EMI Calculator - Loan Calculator India',
   },
   {
     id: 'text-case',
@@ -90,6 +99,7 @@ export const TOOLS: Tool[] = [
     icon: 'Type',
     category: 'text',
     path: '/text-case',
+    seoTitle: 'Text Case Converter - Upper Lower Sentence',
   },
   {
     id: 'character-counter',
@@ -99,6 +109,7 @@ export const TOOLS: Tool[] = [
     icon: 'Hash',
     category: 'text',
     path: '/character-counter',
+    seoTitle: 'Character Counter',
   },
   {
     id: 'random-number',
@@ -108,5 +119,6 @@ export const TOOLS: Tool[] = [
     icon: 'Dices',
     category: 'utility',
     path: '/random-number',
+    seoTitle: 'Random Number Generator',
   },
 ];

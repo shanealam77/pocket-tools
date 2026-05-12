@@ -1,5 +1,5 @@
-import React from 'react';
-import * as LucideIcons from 'lucide-react';
+import React from "react";
+import * as LucideIcons from "lucide-react";
 
 interface IconProps extends LucideIcons.LucideProps {
   name: string;

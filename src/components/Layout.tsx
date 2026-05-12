@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import { Sidebar } from './Sidebar';
-import { MobileHeader } from './MobileHeader';
-import { Outlet, useLocation } from 'react-router-dom';
-import { pageView } from '../lib/analytics';
+import React, { useEffect } from "react";
+import { Sidebar } from "./Sidebar";
+import { MobileHeader } from "./MobileHeader";
+import { Outlet, useLocation } from "react-router-dom";
+import { pageView } from "../lib/analytics";
 
 export const Layout: React.FC = () => {
   const location = useLocation();

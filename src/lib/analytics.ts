@@ -2,7 +2,7 @@
 // This is a simple wrapper for Google Analytics (GA4)
 // Replace 'G-XXXXXXXXXX' with your real Measurement ID from Google Analytics Console
 
-const GA_MEASUREMENT_ID = 'G-6RF3NW3R6G';
+const GA_MEASUREMENT_ID = 'G-8LPZ6QC8X2';
 
 export const initGA = () => {
   if (typeof window === 'undefined') return;
@@ -30,12 +30,17 @@ export const pageView = (url: string) => {
   }
 };
 
-export const trackEvent = (action: string, category: string, label?: string, value?: number) => {
+export const trackEvent = (action: string, category?: string | Record<string, any>, label?: string, value?: number) => {
   if (typeof window !== 'undefined' && (window as any).gtag) {
-    (window as any).gtag('event', action, {
-      event_category: category,
-      event_label: label,
-      value: value,
-    });
+    const params: any = {};
+    if (typeof category === 'string') {
+      params.event_category = category;
+      if (label) params.event_label = label;
+      if (value !== undefined) params.value = value;
+    } else if (typeof category === 'object') {
+      Object.assign(params, category);
+    }
+    
+    (window as any).gtag('event', action, params);
   }
 };

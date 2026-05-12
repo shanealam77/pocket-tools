@@ -35,6 +35,11 @@ const TOOL_COMPONENTS: Record<string, React.FC> = {
   'random-number': RandomNumberGenerator,
 };
 
+import { About } from './pages/About';
+import { Contact } from './pages/Contact';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { Terms } from './pages/Terms';
+
 export default function App() {
   return (
     <FavoritesProvider>
@@ -42,11 +47,14 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<Terms />} />
             {TOOLS.map((tool) => {
               const Component = TOOL_COMPONENTS[tool.id];
               return (
                 <Route
-                  key={tool.id}
                   path={tool.path}
                   element={
                     <ToolLayout tool={tool}>

@@ -20,6 +20,7 @@ export interface Tool {
   icon: string; // Lucide icon name
   category: 'generator' | 'calculator' | 'text' | 'utility';
   path: string;
+  seoTitle?: string;
 }
 
 export interface SEOData {
