@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
 import { ToolLayout } from "./components/ToolLayout";
@@ -42,33 +43,35 @@ import { Terms } from "./pages/Terms";
 
 export default function App() {
   return (
-    <FavoritesProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<Terms />} />
-            {TOOLS.map((tool) => {
-              const Component = TOOL_COMPONENTS[tool.id];
-              return (
-                // @ts-ignore React Router types issue with mapping
-                <Route
-                  key={tool.id}
-                  path={tool.path}
-                  element={
-                    <ToolLayout tool={tool}>
-                      <Component />
-                    </ToolLayout>
-                  }
-                />
-              );
-            })}
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </FavoritesProvider>
+    <HelmetProvider>
+      <FavoritesProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<Terms />} />
+              {TOOLS.map((tool) => {
+                const Component = TOOL_COMPONENTS[tool.id];
+                return (
+                  // @ts-ignore React Router types issue with mapping
+                  <Route
+                    key={tool.id}
+                    path={tool.path}
+                    element={
+                      <ToolLayout tool={tool}>
+                        {Component ? <Component /> : null}
+                      </ToolLayout>
+                    }
+                  />
+                );
+              })}
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </FavoritesProvider>
+    </HelmetProvider>
   );
 }

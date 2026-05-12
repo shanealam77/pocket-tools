@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Helmet } from "react-helmet-async";
 
 interface SEOProps {
   title: string;
@@ -6,18 +7,14 @@ interface SEOProps {
 }
 
 export const SEO: React.FC<SEOProps> = ({ title, description }) => {
-  useEffect(() => {
-    document.title = title;
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", description);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = description;
-      document.head.appendChild(meta);
-    }
-  }, [title, description]);
-
-  return null;
+  return (
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+    </Helmet>
+  );
 };
