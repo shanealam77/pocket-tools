@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://pocket-tools-five.vercel.app/sitemap.xml
+Sitemap: https://webtoolz-five.vercel.app/sitemap.xml

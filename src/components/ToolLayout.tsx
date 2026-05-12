@@ -153,7 +153,10 @@ export const ToolLayout: React.FC<ToolLayoutProps> = ({ tool, children }) => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 pb-20">
-      <SEO title={tool.seoTitle || tool.name} description={tool.description} />
+      <SEO
+        title={tool.seoTitle || tool.name}
+        description={tool.seoDescription || tool.description}
+      />
 
       <div className="max-w-4xl mx-auto px-6 pt-10">
         <nav className="flex items-center gap-4 mb-8">
